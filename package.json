@@ -1,0 +1,19 @@
+{
+  "name": "siteserrariasantos",
+  "version": "1.0.0",
+  "description": "[Documentação](https://drive.google.com/open?id=1mrBs2ktIVUUGdENc3T8Hlg6SCJAj-Exd)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cunhamuril/SiteSerrariaSantos.git"
+  },
+  "author": "OlirumDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cunhamuril/SiteSerrariaSantos/issues"
+  },
+  "homepage": "https://github.com/cunhamuril/SiteSerrariaSantos#readme"
+}
