@@ -10,40 +10,7 @@ main{
     grid-area: conteudo;
 }
 
-.rodape{    
-    background: #75634a;
-    color: #f0e3d1;
-    padding: 7px 30px;
-    border-top: solid 1px #472c11;
-    grid-area: rodape;
-}
 
-.rodape2{
-    grid-area: rodape2;
-    background: #472c11;
-    color: #f0e3d1;
-    padding: 2px 40px;
-    float: right;
-}
-
-.rodape2 .dev{
-    float: right;
-    font-size: 14px;
-}
-
-.rodape2 a{    
-    text-decoration: none;
-    color: #f0e3d1;
-}
-
-.rodape2 a:hover,
-.rodape2 a.selected{    
-    color: red;
-}
-
-.contato{
-    display: inline-block;    
-}
 
 body{
     margin: 0;
@@ -130,6 +97,40 @@ body{
     color: #fff;
 }
 
+.rodape{    
+    background: #75634a;
+    color: #f0e3d1;
+    padding: 7px 30px;
+    border-top: solid 1px #472c11;
+    grid-area: rodape;
+}
+
+.rodape2{
+    grid-area: rodape2;
+    background: #472c11;
+    color: #f0e3d1;
+    padding: 2px 40px;
+    float: right;
+}
+
+.rodape2 .dev{
+    float: right;
+    font-size: 14px;
+}
+
+.rodape2 a{    
+    text-decoration: none;
+    color: #f0e3d1;
+}
+
+.rodape2 a:hover,
+.rodape2 a.selected{    
+    color: rgb(0, 255, 115);
+}
+
+.contato{
+    display: inline-block;    
+}
 
 @media(min-width: 679px){
     .menu-toggle{
@@ -144,14 +145,5 @@ body{
 
     .rodape{
         display: block;
-    }
-
-    body{          
-        grid-template-rows: 80px 1fr 1fr 20px;    
-        grid-template-areas: 
-            'cabecalho'
-            'conteudo'
-            'rodape'
-            'rodape2';
-    }
+    }    
 }

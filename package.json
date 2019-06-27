@@ -4,6 +4,8 @@
   "description": "[Documentação](https://drive.google.com/open?id=1mrBs2ktIVUUGdENc3T8Hlg6SCJAj-Exd)",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
+    "build": "gulp --production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/cunhamuril/SiteSerrariaSantos/issues"
   },
-  "homepage": "https://github.com/cunhamuril/SiteSerrariaSantos#readme"
+  "homepage": "https://github.com/cunhamuril/SiteSerrariaSantos#readme",
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-sass": "4.0.1",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-util": "3.0.8",
+    "gulp-watch": "5.0.0",
+    "gulp-webserver": "0.9.1",
+    "run-sequence": "2.2.1"
+  }
 }
