@@ -42,7 +42,7 @@
     padding: 10px 300px;
 }
 
-@media(max-width: 680px) {
+@media(max-width: 720px) {
     .main h1{
         font-size: 30px;
         text-align: center;
@@ -62,5 +62,10 @@
         max-width: 100%;
         width: auto;
     }
+
+    .main iframe{
+        width: 400px;
+        height: 250px;        
+    }    
     
 }

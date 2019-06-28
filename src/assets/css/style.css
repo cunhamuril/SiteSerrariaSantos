@@ -87,6 +87,7 @@ body{
     text-decoration: none;
     color: #472c11;
     font-size: 1.3em;
+    position: relative;
 }
 
 .menu a{
@@ -148,7 +149,7 @@ body{
     display: inline-block;    
 }
 
-@media(min-width: 679px){
+@media(min-width: 720px){
     .menu-toggle{
         display: none;
     }
@@ -158,7 +159,7 @@ body{
     }
 }
 
-@media(max-width: 680px) {
+@media(max-width: 720px) {
     .menu{
         display: none;
     }
