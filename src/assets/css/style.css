@@ -10,8 +10,6 @@ main{
     grid-area: conteudo;
 }
 
-
-
 body{
     margin: 0;
     font-family: 'Arial';
@@ -19,7 +17,7 @@ body{
     display: grid;
     min-height: 100vh;
     
-    grid-template-rows: 80px 1fr 150px 20px;    
+    grid-template-rows: 80px 1fr 100px 20px;    
     grid-template-areas: 
         'cabecalho'
         'conteudo'
@@ -28,14 +26,15 @@ body{
 }
 
 .cabecalho{
-    background: #fff;
-    border-bottom: solid 5px #69401a;
+    position: sticky;
+    background: #fff;    
+    box-shadow: 0 0 3px 0 #000;
     height: 80px;
     box-sizing: content-box;
 }
 
 .logo{
-    display: inline-block;    
+    display: inline-block;
     margin: 8px 80px;
 }
 
@@ -59,8 +58,7 @@ body{
     font-size: 16px;
 }
 
-.menu{
-    display: inline-block;
+.menu{    
     vertical-align: top;
     height: 80px;
     padding: 30px;     
@@ -90,6 +88,7 @@ body{
 .menu a.selected{
     background-color: #75634a;
     color: #fff;
+    cursor: pointer;
 }
 
 .menu a.active{
@@ -100,16 +99,16 @@ body{
 .rodape{    
     background: #75634a;
     color: #f0e3d1;
-    padding: 7px 30px;
+    padding: 20px 30px;
     border-top: solid 1px #472c11;
-    grid-area: rodape;
+    grid-area: rodape;    
 }
 
 .rodape2{
     grid-area: rodape2;
     background: #472c11;
     color: #f0e3d1;
-    padding: 2px 40px;
+    padding: 1px 10px;
     float: right;
 }
 
@@ -124,8 +123,8 @@ body{
 }
 
 .rodape2 a:hover,
-.rodape2 a.selected{    
-    color: rgb(0, 255, 115);
+.rodape2 a.selected{        
+    color: lightgreen;
 }
 
 .contato{
