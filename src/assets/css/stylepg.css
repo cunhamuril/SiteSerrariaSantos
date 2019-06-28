@@ -51,48 +51,30 @@
     font-size: 30px;
 }
 
-@media(max-width: 720px) {
-    .main h1{
-        font-size: 30px;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .main div{
-        text-align: justify;
-        align-items: center;
-        font-size: 14px;
-        padding: 10px 10px;
-    }
-
-    .main img{
-        display: block;
-        padding: 10px;
-        max-width: 100%;
-        width: auto;
-    }
-
-    .main iframe{
-        width: 400px;
-        height: 250px;        
-    }        
+.conteudo-divs{
+    margin: 70px;    
 }
 
+.conteudo-divs h2{
+    margin: 0px;
+    font-size: 2.6em;
+    padding: 100px 10px 0px 10px;
+}
+
+.conteudo-divs .texto{
+    text-align: justify;
+    padding: 0px 190px;
+}
 
 /* CARDS */
-.produtos{
-    margin: 70px;
-}
-
 .produto{    
     display: inline-block;
-    vertical-align: top;
-    /* font-family: Verdana, sans-serif; */
+    vertical-align: top;    
     border: solid 1px #ccc;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
     height: 400px;
     width: 320px;
-    margin: 20px 20px;
+    margin: 20px 10px;
     padding: 5px;
     background-color: #fff;
     border-radius: 3px;    
@@ -124,6 +106,66 @@
 .produto-info p{
     text-align: justify;
     margin: 0;    
+}
+
+/* SERVICOS */
+.producao img{
+    padding: 10px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+@media(max-width: 720px) {
+    .main h1{
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .main div{
+        text-align: justify;
+        align-items: center;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .main img{
+        display: block;
+        padding: 10px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .main iframe{
+        width: 360px;
+        height: 250px;            
+    }
+
+    .conteudo-divs{
+        text-align: justify;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .produto{        
+        height: 350px;
+        width: 270px;             
+    }
+
+    .producao img{
+        padding: 20px;
+        max-width: 100%;        
+    }
+
+    .conteudo-divs .texto{
+        text-align: justify;
+        padding: 0px 20px;
+    }
+
+    .conteudo-divs h2{        
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
 
 
