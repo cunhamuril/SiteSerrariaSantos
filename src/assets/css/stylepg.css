@@ -42,6 +42,15 @@
     padding: 10px 300px;
 }
 
+.titulo{
+    text-align: center;    
+    background-color: #75634a;
+    color: #f0e3d1;
+    padding: 30px;
+    margin: 0;
+    font-size: 30px;
+}
+
 @media(max-width: 720px) {
     .main h1{
         font-size: 30px;
