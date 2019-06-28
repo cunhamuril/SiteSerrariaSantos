@@ -4,6 +4,10 @@
 
 header{
     grid-area: cabecalho;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
 
 main{
@@ -17,7 +21,7 @@ body{
     display: grid;
     min-height: 100vh;
     
-    grid-template-rows: 80px 1fr 100px 20px;    
+    grid-template-rows: 80px 1fr 100px 30px;    
     grid-template-areas: 
         'cabecalho'
         'conteudo'
@@ -39,7 +43,7 @@ body{
 }
 
 .logo img{
-    max-height: 180x;
+    max-height: 180px;
     max-width: 180px;
     width: auto;
     height: auto;
@@ -56,6 +60,11 @@ body{
     margin: 20px 15px;
     cursor: pointer;
     font-size: 16px;
+    transition: all 0.1s linear;
+}
+
+.menu-toggle:hover{
+    border: solid 1px #472c11;
 }
 
 .menu{    
@@ -82,13 +91,20 @@ body{
 
 .menu a{
     padding: 15px;
+    /* transition: all 100ms linear; */
+    transition: ease-in-out 120ms;
 }
 
-.menu a:hover,
+.menu a:hover{
+    color: #e08b12;
+    padding: 15px 15px 11px 15px;
+    border-bottom: solid 4px #e08b12;    
+    cursor: pointer;
+}
+
 .menu a.selected{
     background-color: #75634a;
     color: #fff;
-    cursor: pointer;
 }
 
 .menu a.active{
@@ -108,18 +124,19 @@ body{
     grid-area: rodape2;
     background: #472c11;
     color: #f0e3d1;
-    padding: 1px 10px;
+    padding: 7px 20px;
     float: right;
 }
 
 .rodape2 .dev{
-    float: right;
+    text-align: center;
     font-size: 14px;
 }
 
 .rodape2 a{    
     text-decoration: none;
     color: #f0e3d1;
+    transition: all 0.1s linear;
 }
 
 .rodape2 a:hover,
@@ -135,6 +152,10 @@ body{
     .menu-toggle{
         display: none;
     }
+
+    #nav-slide{
+        display: none;
+    }
 }
 
 @media(max-width: 680px) {
@@ -144,5 +165,46 @@ body{
 
     .rodape{
         display: block;
-    }    
+    }
+
+    #nav-slide{
+        position: fixed;
+        right: -200px;
+        top: 60px;
+        width: 200px;
+        height: 0;
+        background: #75634a;
+        transition: right 0.2s linear;
+        vertical-align: top;    
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    #nav-slide ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #nav-slide li{
+        display: block;
+        padding: 8px 0px;
+        color: #f0e3d1;
+        align-items: center;
+        text-align: center;
+        border-bottom: solid 2px #472c11;
+    }
+    
+    .cabecalho a{
+        color: #f0e3d1;        
+    }
+
+    #nav-slide a{
+        padding: 15px;        
+        transition: ease-in-out 120ms;
+    }
+
+    #nav-slide a:hover{        
+        color: #e08b12;
+    }
 }
+

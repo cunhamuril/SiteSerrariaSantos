@@ -39,9 +39,20 @@
     }
 
     window.onhashchange = e => {
-        navegarViaAjax(location.hash)      
+        navegarViaAjax(location.hash)        
     }
 
     configurarLinks()
     navegacaoInicial()
 })()
+
+function slidetoggle(){
+    const slider = document.getElementById("nav-slide")
+    slider.style.height = window.innerHeight - 60 + "px";
+
+    if(slider.style.right == "0px"){
+        slider.style.right = "-200px";
+    }else{
+        slider.style.right = "0px";
+    }    
+}
