@@ -206,5 +206,10 @@ body{
     #nav-slide a:hover{        
         color: #e08b12;
     }
+
+    .logo{
+        display: inline-block;
+        margin: 8px 30px;
+    }
 }
 
