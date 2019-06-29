@@ -114,7 +114,7 @@ body{
 }
 
 .rodape{    
-    background: #75634a;
+    background:linear-gradient(to left, #705c40,#524129) ;
     color: #f0e3d1;
     padding: 20px 30px;
     border-top: solid 1px #472c11;
@@ -201,7 +201,7 @@ body{
 
     #nav-slide a{
         padding: 15px;        
-        transition: ease-in-out 120ms;
+        transition: ease-in-out 0.3s;
     }
 
     #nav-slide a:hover{        
