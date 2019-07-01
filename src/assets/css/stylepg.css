@@ -1,8 +1,5 @@
 .img-home{
-    max-width: 100%;
-    width: auto; 
-    display: table;
-    position: relative;
+    width: 100%;
 }
 
 .main{
@@ -39,7 +36,7 @@
     text-align: justify;
     align-items: center;
     font-size: 20px;
-    padding: 10px 300px;
+    padding: 0 10%;
 }
 
 .titulo{
@@ -52,7 +49,8 @@
 }
 
 .conteudo-divs{
-    margin: 70px;    
+    margin: 5%;
+    display: inline-block;
 }
 
 .conteudo-divs h2{
@@ -61,22 +59,17 @@
     padding: 100px 10px 0px 10px;
 }
 
-.conteudo-divs .texto{
-    text-align: justify;
-    padding: 0px 300px;
-}
-
 /* CARDS */
 .produto{    
     display: inline-block;
     vertical-align: top;    
-    height: 500px;
-    width: 420px;
+    height: 400px;
+    width: 320px;
     margin: 20px 10px;
-    padding: 2px;
+    padding: 4px;
     background-color: #fff;
-    border-radius: 10px;  
-    transition: all 0.3s;
+    border-radius: 5px;  
+    transition: all 0.3s;    
 }
 
 .produto:hover{
@@ -117,7 +110,12 @@
     max-height: 50%;
 }
 
-@media(max-width: 720px) {
+.conteudo-divs p{
+    text-align: justify;
+    margin: 0 20%;  
+}
+
+@media(max-width: 950px) {
     .main h1{
         font-size: 30px;
         text-align: center;
@@ -126,9 +124,8 @@
     
     .main div{
         text-align: justify;
-        align-items: center;
-        font-size: 14px;
-        padding: 10px 10px;
+        align-items: center;        
+        padding: 0 5%;
     }
 
     .main img{
@@ -138,15 +135,13 @@
         width: auto;
     }
 
-    .main iframe{
-        width: 360px;
-        height: 250px;            
+    .mapa{                
+        max-width: 100%;
     }
 
     .conteudo-divs{
-        text-align: justify;
-        padding: 0px;
-        margin: 0px;
+        text-align: justify;        
+        margin: 10%;        
     }
 
     .produto{        
@@ -155,19 +150,49 @@
     }
 
     .producao img{
-        padding: 20px;
+        margin: 10px;
         max-width: 100%;        
-    }
-
-    .conteudo-divs .texto{
-        text-align: justify;
-        padding: 0px 20px;
     }
 
     .conteudo-divs h2{        
         font-size: 1.5em;
-        text-align: center;
+        text-align: center;        
+    }
+
+    .conteudo-divs p{
+        text-align: justify;
+        margin: 0 8%;  
     }
 }
 
+
+.mapa{
+    width: 100%;
+    height: 40em;
+}
+
+
+/* subtitulo */
+.sub{
+    margin: 0;
+    font-size: 20px;
+    background-color: #f0e3d1;
+    padding: 2% 15%;
+    color: #524129;
+    font-size: 1.1em;
+}
+
+.sub a{
+    text-decoration: none;
+    color: #524129;
+    transition: all 120ms;  
+}
+
+.sub a:hover{
+    color: #e08b12;
+}
+
+.sub span{
+    vertical-align: super;
+}
 

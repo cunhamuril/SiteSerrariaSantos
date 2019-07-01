@@ -2,9 +2,9 @@
     function marcarLinkComoSelecionado(hash) {
         const links = document.querySelectorAll(`.menu a[od-link]`)
         links.forEach(link => link.classList.remove('selected'))
-
+        
         const link = document.querySelector(`.menu a[od-link='${hash}']`)
-        link.classList.add('selected')
+        link.classList.add('selected')       
     }
 
     function navegarViaAjax(hash) {
@@ -54,5 +54,5 @@ function slidetoggle(){
         slider.style.right = "-200px";        
     }else{
         slider.style.right = "0px";
-    }    
+    }
 }
