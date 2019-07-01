@@ -46,6 +46,8 @@
     navegacaoInicial()
 })()
 
+
+// Slidetoggle
 function slidetoggle(){
     const slider = document.getElementById("nav-slide")
     slider.style.height = window.innerHeight - 60 + "px";
@@ -56,3 +58,4 @@ function slidetoggle(){
         slider.style.right = "0px";
     }
 }
+
