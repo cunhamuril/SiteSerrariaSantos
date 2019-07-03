@@ -4,4 +4,4 @@
 
 [Documentação](https://drive.google.com/open?id=1mrBs2ktIVUUGdENc3T8Hlg6SCJAj-Exd)
 
-#### 1. Inicialmente será desenvolvido o escopo do site
+  #### Versão 1.0.0 sem utilizar nenhum framework
